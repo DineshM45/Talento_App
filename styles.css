@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background color for the whole page */
+    color: #333; /* Dark color for text for better readability */
+}
+
+.navbar-custom {
+    background-color: #007bff; /* Primary color for the navbar */
+    padding: 1rem 2rem; /* Padding around the navbar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar-brand {
+    color: #ffffff; /* White color for the brand */
+    font-size: 1.75rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #e9ecef; /* Light color on hover */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* White color for nav links */
+    padding: 0.75rem 1.5rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 0.25rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Primary color on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Slight white background on hover */
+}
+
+.navbar-toggler {
+    border: none; /* Remove border */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;base64,...'); /* Customize toggler icon */
+}
+
+/* Top Section */
+.top-section {
+    background-color: #ffffff; /* White background for top section */
+    padding: 2rem 1rem; /* Reduced padding */
+    text-align: center;
+    border-bottom: 1px solid #e9ecef; /* Thinner border */
+}
+
+.top-section h1 {
+    font-size: 2.5rem; /* Smaller font size */
+    color: #007bff; /* Blue color for the app name */
+    animation: fadeInUp 1.5s ease-out, glow 1.5s ease-in-out infinite alternate;
+    text-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Glow effect */
+}
+
+.top-section p {
+    font-size: 1rem; /* Smaller font size */
+    color: #555; /* Darker gray for the description text */
+    margin: 0.5rem 0; /* Reduced margin */
+    line-height: 1.5;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+    }
+}
+
+/* Carousel Section */
+.carousel-section {
+    background-color: #ffffff; /* White background for carousel section */
+    padding: 2rem 1rem; /* Reduced padding */
+    animation: fadeIn 2s ease-in-out;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure images are contained without distortion */
+}
+
+/* Bottom Section */
+.bottom-section {
+    background-color: #ffffff; /* White background for bottom section */
+    padding: 2rem 1rem; /* Reduced padding */
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    border-top: 1px solid #e9ecef; /* Thinner border */
+}
+
+.btn-download {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+}
+
+.btn-download:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #007bff; /* Match footer color with navbar */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem; /* Reduced margin */
+    width: 100%;
+}
